@@ -1,0 +1,152 @@
+﻿@using AOWEN.Model
+@model CampaignApply
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="format-detection" content="telephone=no">
+    <link href="~/Content/font.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/MySelf/Custom.js"></script>
+    <title>SZC60</title>
+    <script type="text/javascript">
+        //缩放比例
+        if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+            var version = parseFloat(RegExp.$1);
+            if (version > 2.3) {
+                var phoneScale = parseInt(window.screen.width) / 694;
+                document.write('<meta name="viewport" content="width=694, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', user-scalable=no, target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=694, user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=694, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //绑定选项操作事件
+            $(".battle-option").on("click", function () {
+                var _self = $(this);
+                _self.parent().children("div").removeClass("battle-option-point");
+                _self.addClass("battle-option-point");
+                _self.parent().children("input[type='hidden']").val(_self.text());
+            });
+
+            @{
+                if(ViewBag.code=="1")
+                {
+                    <text>
+            MyAlertDialogLink("", "@ViewBag.msg", "SZC60");
+            </text>
+                }
+
+                if(ViewBag.code=="2")
+                {
+                    <text>
+            MyAlertDialog("", "@ViewBag.msg");
+            </text>
+                }
+            }
+        });
+
+        var isSubmit = false;
+        //验证输入信息
+        function CheckInput() {
+            if (isSubmit == true) {
+                MyAlertDialog("", "数据提交中请稍后！"); return;
+            }
+            isSubmit = true;
+            var _name = $("#Name").val();
+            var _sex = $("#Sex").val();
+            var _identity = $("#IdentityName").val();
+            var _mobile = $("#Mobile").val();
+            var _regMobile = new RegExp("^1[34578]\\d{9}$");
+            if (_name == "") {
+                MyAlertDialog("", "请输入姓名！"); return;
+            }
+            if (_sex == "") {
+                MyAlertDialog("", "请选择称谓！"); return;
+            }
+            if (_identity == "") {
+                MyAlertDialog("", "请选择身份！"); return;
+            }
+            if (_mobile == "") {
+                MyAlertDialog("", "请输入手机号！"); return;
+            }
+            if (_regMobile.test(_mobile) == false) {
+                MyAlertDialog("", "输入的手机号不正确！"); return;
+            }
+
+            $("form").submit();
+        }
+    </script>
+</head>
+<body>
+    <div class="battle">
+        <div class="battle-text"><img src="../../content/images/battle-02.png" alt=""></div>
+        <div class="battle-text"><img src="../../content/images/battle-03.png" alt=""></div>
+        <div class="battle-text"><img src="../../content/images/battle-04.png" alt=""></div>
+        <div class="battle-text"><img src="../../content/images/battle-05.png" alt=""></div>
+        <div class="battle-text"><img src="../../content/images/battle-06.png" alt=""></div>
+        @using (@Html.BeginForm())
+        {
+            <div class="battle-enroll">
+                <div class="battle-enroll-header">我要报名</div>
+                <table class="battle-enroll-text">
+                    <tr>
+                        <td>称谓：</td>
+                        <td>
+                            <div class="battle-option battle-option-point">先生</div><div class="battle-option">女士</div>
+                            @Html.HiddenFor(o => o.Sex, new { @Value = "先生" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>姓名：</td>
+                        <td>@Html.TextBoxFor(o => o.Name, new { @class = "battle-message", maxlength = "20" })</td>
+                    </tr>
+                    <tr>
+                        <td>身份：</td>
+                        <td>
+                            <div class="battle-option battle-option-point">车主</div>
+                            <div class="battle-option">非车主</div>
+                            @Html.HiddenFor(o => o.IdentityName, new { @Value = "车主" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>手机：</td>
+                        <td>@Html.TextBoxFor(o => o.Mobile, new { @class = "battle-message", maxlength = "11" })</td>
+                    </tr>
+                    <tr>
+                        <td>省份：</td>
+                        <td><div class="battle-message">广东省</div>@Html.HiddenFor(o => o.Province, new { @Value = "广东省" })</td>
+                    </tr>
+                    <tr>
+                        <td>城市：</td>
+                        <td><div class="battle-message">深圳市</div>@Html.HiddenFor(o => o.City, new { @Value = "深圳市" })</td>
+                    </tr>
+                    <tr>
+                        <td>日期：</td>
+                        <td>
+                            @{
+            List<SelectListItem> ptList = new List<SelectListItem>() {
+                                new SelectListItem(){Value="2016/01/09",Text="2016/01/09"},
+                                new SelectListItem(){Value="2016/01/10",Text="2016/01/10"},
+                            };
+                            }
+                            @Html.DropDownListFor(o => o.ParticipationTime, ptList, new { @class = "battle-message1" })
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="battle-footbtn"><img onclick="CheckInput()" src="../../content/images/battle-07.png" alt="">@Html.HiddenFor(o => o.CampaignName, new { @Value = "2015深圳XC90" })</div>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\VolvoEBook.DAL.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\VolvoEBook.DAL.pdb
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\EntityFramework.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\VolvoEBook.Model.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\VolvoEBook.Model.pdb
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\EntityFramework.xml
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\obj\Debug\AOWEN.DAL.csprojResolveAssemblyReference.cache
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\obj\Debug\VolvoEBook.DAL.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.DAL\obj\Debug\VolvoEBook.DAL.pdb

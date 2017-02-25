@@ -1,0 +1,12 @@
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\bin\Debug\VolvoEBook.Common.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\bin\Debug\VolvoEBook.Common.pdb
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\bin\Debug\EPPlus.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\bin\Debug\NPOI.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\bin\Debug\NPOI.OOXML.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\bin\Debug\NPOI.OpenXml4Net.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\bin\Debug\EPPlus.xml
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\obj\Debug\VolvoEBook.Common.dll
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\obj\Debug\VolvoEBook.Common.pdb
+E:\Project\test\后台\trunk\dev\source\VolvoEBook\AOWEN.Common\obj\Debug\AOWEN.Common.csprojResolveAssemblyReference.cache

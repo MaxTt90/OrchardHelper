@@ -1,0 +1,182 @@
+﻿* {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, "Hiragino Sans GB", sans-serif;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style-type: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+html {
+	min-height: 100%;
+	border: none;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+ul, ol {
+	list-style-type: none;
+}
+button, submit, input, select, textarea {
+	outline: none;
+}
+button, submit, input, select {
+	vertical-align: middle;
+}
+button, submit, input[type="button"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+textarea {
+	resize: none;
+	outline: none;
+}
+button::-moz-focus-inner, submit::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+padding:0;
+border:none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+th, td {
+	text-align: left;
+}
+address, cite, dfn, em, var {
+	font-style: normal;
+}
+img {
+	border: none;
+	vertical-align: middle;
+}
+a {
+	outline: none;
+}
+a:link, a:visited {
+	text-decoration: none;
+	outline: none;
+}
+a:hover, a:active {
+	outline: none;
+}
+iframe {
+	vertical-align: top;
+}
+*html{
+zoom:expression(function(ele) {
+ele.style.zoom = "1";
+document.execCommand("BackgroundImageCache", false, true)
+}
+(this))
+}
+.clearfix {
+*zoom:1
+}
+.clearfix:after {
+	content: '\20';
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+.hide {
+	display: none;
+}
+
+
+
+/*battle*/
+html,body{
+		width: 100%;
+		min-height: 100%;
+		max-width: 694px;
+		margin: 0 auto;
+		background: #fff;
+	}
+	body{
+		background: url(images/battle-01.png);
+		background-size: 100% 100%;
+	}
+	.battle-text{
+		padding-top: 80px;
+	}
+	.battle-enroll{
+		width: 320px;
+		margin: 0 auto;
+		padding-top: 80px;
+	}
+	.battle-enroll-header{
+        line-height: 80px;
+        font-size: 36px;
+        color: #5d5d5e;
+        text-align: center;
+        font-weight: bold;
+	}
+	.battle-enroll-text{
+        width: 320px;
+        margin: 0 auto;
+        padding: 30px 0;
+	}
+	.battle-enroll-text td{
+        height: 50px;
+        line-height: 50px;
+        font-size: 21px;
+	}
+	.battle-option{
+		float: left;
+		padding: 0 30px;
+		position: relative;
+		overflow: hidden;
+		line-height: 50px;
+		font-size: 21px;
+		color: #333132;
+	}
+	.battle-option:before{
+		content: '';
+		width: 22px;
+		height: 22px;
+		border: 1px solid #adadad;
+		border-radius: 11px;
+		position: absolute;
+		top: 14px;
+		left: 0;
+	}
+	.battle-option-point:after{
+		content: '';
+		width: 12px;
+		height: 12px;
+		background: #003058;
+		border-radius: 6px;
+		position: absolute;
+		top: 20px;
+		left: 6px;
+	}
+	.battle-message{
+		width: 210px;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 15px;
+		border: 1px solid #cbcbcb;
+		border-radius: 10px;
+		background: rgba(215,215,215,0.1);
+		font-size: 21px;
+	}
+	.battle-message1{
+		width: 240px;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 15px;
+		border: 1px solid #cbcbcb;
+		border-radius: 10px;
+		background: rgba(215,215,215,0.1);
+		font-size: 21px;
+	}
+	.battle-footbtn{
+        text-align: center;
+        padding-bottom:80px;
+	}
